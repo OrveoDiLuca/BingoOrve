@@ -36,7 +36,7 @@ function cargar(e){
     if(ar.length > 0 && car.length > 0){
         let variable = car[0]
         localStorage.setItem("carton",JSON.stringify(variable));
-        window.location.href = "/juego.html";
+        window.location.href = "juego.html";
     }
     else if(ar.length < 4){
         alert("Tienes que agregar a los usuarios")
