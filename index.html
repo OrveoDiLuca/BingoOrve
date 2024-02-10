@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo Game</title>
+    <link rel="stylesheet" href="/styles/style.css">
+  </head>
+  <body>
+    <div class="menu">
+        <header>
+          <h1>Bienvenido a tu bingo familiar!!!!!</h1>
+          <h3>Preparado para jugar con tus amigos y familiares</h3>
+        </header>
+        <p>Ingresa los nombres de los usuarios a jugar: </p>
+        <form class="nombres" id="formulario1">
+          <input type="text" id="nombre" placeholder="Ejm : Orveo">
+          <input type="submit" class="agregar" value="Agregar participante">
+        </form>
+        <p>Ingresa el tamaño del carton para el juego: </p>
+        <form class="carton" id="formulario2">
+          <input type="number" max="5" min="3" id="cart" placeholder="Ejm: 3" >
+          <input type="submit" class="agregar" value="Agregar carton">
+        </form> 
+        <br/>
+        <a class="play" id= "send" href="/juego.html">Iniciar juego mis panas!</a>
+        <a class="play" id= "send" href="">Ver los ultimos resultados.</a>
+    </div>
+
+    <script src="functions/agregar.js"></script>
+  </body>
+</html>

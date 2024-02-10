@@ -1,0 +1,135 @@
+body{
+    background-color: #F1FFFC;
+}
+html,body{
+    width: 97%;
+}
+.menu{
+    background-color: #EBB324;
+    color:#F2668B;
+    padding: 40px;
+    border-radius: 15px; 
+    box-shadow: 10px 5px 5px #C2A581
+}
+
+@media screen and (min-width:400px){
+    .menu{
+        width: 80%; 
+        margin: 100px auto;
+        text-align: center;
+    }
+}
+
+header h3{
+    font-size: 30px;
+    font-weight: bolder;
+}
+header h1{
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+p{
+    font-size: 20px;
+    font-weight: 800px;
+    margin:30px 0 5px 0;
+}
+
+input{
+    border-radius: 5px;
+    width: 250px;
+    height: 20px;
+    background-color: #6DD0F0;
+} 
+  
+input::placeholder {
+    text-align: center;
+    color: black;
+}
+
+
+@media screen and (max-width:1020px){
+    input{
+        margin-top: 10px;
+        height: 25px;
+    }
+}
+
+.menu .play {
+    background-color: #6DD0F0; 
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 50px;
+    border-radius: 15px;
+  }
+  
+.menu .play:hover {
+    background-color: #0A9EBF;
+}
+
+.menu .agregar{
+    background-color:#0A9EBF ; 
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+input[type="submit"] {
+  height: 30px;
+  padding: 0 15px;
+  width: auto;
+}
+
+
+.menu .agregar:hover{
+    background-color: #6DD0F0;
+}
+
+.carton input{
+    margin: 10px 10px 50px 10px;
+}
+
+@media screen and (max-width:1020px){
+    .menu .agregar{
+        display: block;
+        margin: 10px auto;
+    }
+}
+
+
+@media screen and (max-width:1020px){
+    input{
+        display: block;
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-width:1020px){
+    .carton input{
+        display: block;
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-width:1020px){
+    .menu .play{
+        display: block;
+        margin: 0 auto;  
+      }
+}
+
+a{
+    text-decoration: none;
+    font-weight: 700;
+
+}

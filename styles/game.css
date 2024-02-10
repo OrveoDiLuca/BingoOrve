@@ -1,0 +1,211 @@
+body{
+    background-color: #F1FFFC;
+}
+
+h1{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    #usuarioss{
+        flex-direction: column;
+    }
+}
+
+#usuarioss{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px;
+    background-color: #EBB324;
+    border-radius: 15px;
+}
+
+.usuario{
+    list-style: none;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: large;
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.supercotainer{
+    margin:50px 30px 0px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.superconteiner{
+    margin-top: 180px;
+}
+
+.buton{
+    background-color: #6DD0F0;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 150px;
+}
+
+.buton:hover{
+    background-color: #0A9EBF;
+}
+
+#Numero {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 30px;
+    
+}
+
+.numero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 58px;
+    height: 58px;
+    flex-shrink: 0;
+    background: #ffffff;
+    margin: 8px;
+    text-align: center;
+    font-family: "Red Hat Display";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 5px;
+}
+
+.numero-valioso{
+    background-color:#EBB324 ;
+}
+
+  
+#numeroAleatorio {
+    font-size: 24px;
+    border: 1px solid black;
+    text-align: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    background-color: #F2668B;
+    box-shadow:2px 2px 4px;
+    border-radius: 10px;
+    
+}
+
+.boton{
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #6DD0F0;
+    box-shadow: 2px 2px 4px;
+}
+
+.boton:hover{
+    background-color: #0A9EBF;
+}
+
+.boton-carton{
+    grid-row: 2;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 768px) {
+    .carton{
+        height: 60px;
+    }
+}
+
+.num{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 58px;
+    height: 58px;
+    flex-shrink: 0;
+    background: #F2668B;
+    margin: 8px;
+    text-align: center;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px;
+}
+
+#num-matriz{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.num-matriz-3{
+    padding: 60px;
+}
+
+.num-matriz-4{
+    padding: 40px;
+}
+
+.num-matriz-5{
+    margin: 10px;
+}
+
+.bingocards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 525px;
+    border-radius: 20px;
+}
+
+.carton-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*Numero que se genera*/
+#numeroAleatorio {
+    display: flex;
+    align-items: center;
+}
+/*Este es el boton de generar el numero aleatorio*/
+#verificacion {
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#turno,
+.turno {
+    margin: 0;
+    color: #000;
+    font-style: normal;
+    line-height: normal;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.superconteiner {
+    justify-content: space-around;
+}
+
+#prueba{
+    display: none;
+}

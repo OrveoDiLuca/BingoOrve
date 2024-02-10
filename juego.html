@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bingo Game</title>
+        <link rel="stylesheet" href="/styles/game.css">
+    </head>
+    <body>
+        <h1>Participantes</h1>
+        <div id="usuarioss"></div>
+        <div class="boton-carton">
+            <button id="boton" class="boton carton" onclick="mostrar()">Boton Participante 1</button>
+            <button class="boton carton">Boton Participante 2</button>
+            <button class="boton carton">Boton Participante 3</button>
+            <button class="boton carton">Boton Participante 4</button>
+        </div>
+        <body>
+            <div class="supercontainer">
+                <div class="cards">
+                    <div class="bingocards">
+                        <div id="prueba">
+                            <div class="carton-container" id="num-matriz">
+                            </div>
+                            <button class="boton carton" onclick="ocultar()">Ocultar</button>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="call">
+                    <div class="container">
+                        <p class="turno">Rondas que faltan : <span id="turno"></span></p>
+                    </div>
+                    <div id="Numero">
+                        <div id="numeroAleatorio">
+                            
+                        </div>
+                        <button class = "boton" id= "verificacion" onclick="GeneradordeBingo()">Genera el numero</button>
+                    </div>
+                </div>
+               
+            </div>
+            
+        </body>
+        
+        <script src="functions/obtener.js"></script>
+    </body>
+</html>
