@@ -32,19 +32,21 @@ function AgregarCarton(e){
 }
 
 function cargar(e){
-    e.preventDefault()
     if(ar.length > 0 && car.length > 0){
         let variable = car[0]
         localStorage.setItem("carton",JSON.stringify(variable));
         window.location.href = "juego.html";
     }
     else if(ar.length < 4){
+        e.preventDefault()
         alert("Tienes que agregar a los usuarios")
     }
     else if(car.length === 0 ){
+        e.preventDefault()
         alert("Tienes que agregar al carton")
     }
     else{
+        e.preventDefault()
         alert("Agrega a los usuarios y al carton")
     }
 }
