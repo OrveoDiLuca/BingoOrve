@@ -102,8 +102,7 @@ tur = document.getElementById("turno");
 turno.innerText = contador;
 num.innerText = 0;
 
-let miBoton = document.getElementById('verificacion');
-
+let miBoton = document.getElementById("verificacion");
 
 function GeneradordeBingo() {
     if (contador < y.length) {
@@ -121,18 +120,14 @@ function GeneradordeBingo() {
     }
 }
 
-// Función para manejar el clic en el botón
+
 function volverAPaginaPrincipalYBorrarDatos() {
-    // Eliminar todos los datos almacenados en localStorage
     localStorage.clear();
-    // Redirigir al usuario a la página principal
-    window.location.href = "index.html"; // Reemplaza "pagina_principal.html" con la URL de tu página principal
+    window.location.href = "index.html"; 
 }
 
-// Obtener referencia al botón
 const botonVolver = document.getElementById('salir');
 
-// Adjuntar evento de clic al botón
 botonVolver.addEventListener('click', volverAPaginaPrincipalYBorrarDatos);
 
 
