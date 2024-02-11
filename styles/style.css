@@ -133,3 +133,9 @@ a{
     font-weight: 700;
 
 }
+
+@media screen and (max-width:1020px){
+    #send2{
+        margin-top: 10px;
+    }
+}

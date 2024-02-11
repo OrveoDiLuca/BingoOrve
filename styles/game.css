@@ -87,6 +87,7 @@ a{
     background-color:#EBB324 ;
 }
 
+
   
 #numeroAleatorio {
     font-size: 24px;
@@ -147,7 +148,6 @@ a{
     flex-wrap: wrap;
 }
 
-
 .num-matriz-3{
     padding: 60px;
 }
@@ -175,6 +175,30 @@ a{
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.carton-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.carton-container3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.carton-container4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#num-matriz2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 
 /*Numero que se genera*/
 #numeroAleatorio {
@@ -207,5 +231,17 @@ a{
 }
 
 #prueba{
+    display: none;
+}
+
+#prueba2{
+    display: none;
+}
+
+#prueba3{
+    display: none;
+}
+
+#prueba4{
     display: none;
 }

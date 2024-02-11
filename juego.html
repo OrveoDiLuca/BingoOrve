@@ -7,24 +7,37 @@
         <link rel="stylesheet" href="styles/game.css">
     </head>
     <body>
+        <div class="buttton">
+            <button class="boton" id="salir">Salir de la partida</button>
+        </div>
         <h1>Participantes</h1>
         <div id="usuarioss"></div>
         <div class="boton-carton">
             <button id="boton" class="boton carton" onclick="mostrar()">Boton Participante 1</button>
-            <button class="boton carton">Boton Participante 2</button>
-            <button class="boton carton">Boton Participante 3</button>
-            <button class="boton carton">Boton Participante 4</button>
+            <button id= "boton2" class="boton carton" onclick="mostrar2()">Boton Participante 2</button>
+            <button id="boton3" class="boton carton" onclick="mostrar3()">Boton Participante 3</button>
+            <button id="boton4" class="boton carton" onclick="mostrar4()">Boton Participante 4</button>
         </div>
         <body>
             <div class="supercontainer">
                 <div class="cards">
                     <div class="bingocards">
                         <div id="prueba">
-                            <div class="carton-container" id="num-matriz">
-                            </div>
+                            <div class="carton-container" id="num-matriz"></div>
                             <button class="boton carton" onclick="ocultar()">Ocultar</button>
                         </div>
-                        
+                        <div id="prueba2">
+                            <div class="carton-container2" id="num-matriz2"></div>
+                            <button class="boton carton" onclick="ocultar2()">Ocultar</button>
+                        </div>
+                        <div id="prueba3">
+                            <div class="carton-container3" id="num-matriz3"></div>
+                            <button class="boton carton" onclick="ocultar3()">Ocultar</button>
+                        </div>
+                        <div id="prueba4">
+                            <div class="carton-container4 " id="num-matriz4"></div>
+                            <button class="boton carton" onclick="ocultar4()">Ocultar</button>
+                        </div>
                     </div>
                 </div>
                 <div class="call">

@@ -37,7 +37,6 @@ function generarLista(num){
                 lista.push(Numeroaleatorio);
             }
         }
-
     }
     return lista
 }
@@ -52,10 +51,17 @@ if(size === 3){
     document.getElementById("num-matriz").className = "num-matriz-5";
 }
 
+
 const x = generarLista("number")
+const w = generarLista("number")
+const z = generarLista("number")
+const t = generarLista("number")
 const y = generarLista("string")
 
 const container = document.getElementById("num-matriz")
+const container2 = document.getElementById("num-matriz2")
+const container3 = document.getElementById("num-matriz3")
+const container4 = document.getElementById("num-matriz4")
 
 
 x.forEach((num) => {
@@ -66,27 +72,74 @@ x.forEach((num) => {
     container.appendChild(div);
 });
 
+w.forEach((num) => {
+    const div = document.createElement('div');
+    div.className = 'num';
+    div.id = `${w.indexOf(num)}`;
+    div.textContent = `${num}`;
+    container2.appendChild(div);
+});
+
+z.forEach((num) => {
+    const div = document.createElement('div');
+    div.className = 'num';
+    div.id = `${z.indexOf(num)}`;
+    div.textContent = `${num}`;
+    container3.appendChild(div);
+});
+
+t.forEach((num) => {
+    const div = document.createElement('div');
+    div.className = 'num';
+    div.id = `${t.indexOf(num)}`;
+    div.textContent = `${num}`;
+    container4.appendChild(div);
+});
+
 let contador = 25
 num = document.getElementById("numeroAleatorio");
 tur = document.getElementById("turno");
 turno.innerText = contador;
 num.innerText = 0;
 
+let miBoton = document.getElementById('verificacion');
+
+
 function GeneradordeBingo() {
     if (contador < y.length) {
         turno.innerText = contador - 1;
         num.innerText = y[contador];
-        if (x.includes(y[contador])) { //Si x contiene el numero de la posicion contador de la lista "y" entonces busca ese indice en la lista de x mediante indexof, y al final cambia la clase a numero-valioso numero
+        if (x.includes(y[contador]) ) { //Si x contiene el numero de la posicion contador de la lista "y" entonces busca ese indice en la lista de x mediante indexof, y al final cambia la clase a numero-valioso numero
             numeroverificado = document.getElementById(`${x.indexOf(y[contador])}`);
             numeroverificado.className = 'numero-valioso numero';
         }
     }
     contador--;
-    while(contador < 0){
+    if(contador <= 0){
         alert("Fin del juego")
-        break;
+        miBoton.style.display = "none";
     }
 }
+
+// Función para manejar el clic en el botón
+function volverAPaginaPrincipalYBorrarDatos() {
+    // Eliminar todos los datos almacenados en localStorage
+    localStorage.clear();
+    // Redirigir al usuario a la página principal
+    window.location.href = "index.html"; // Reemplaza "pagina_principal.html" con la URL de tu página principal
+}
+
+// Obtener referencia al botón
+const botonVolver = document.getElementById('salir');
+
+// Adjuntar evento de clic al botón
+botonVolver.addEventListener('click', volverAPaginaPrincipalYBorrarDatos);
+
+
+
+const generarDiv1 = document.createElement("div");
+const prueba = document.getElementById("prueba");
+
 
 //Para mostrar la matriz. 
 function mostrar(){
@@ -95,4 +148,28 @@ function mostrar(){
 
 function ocultar(){
     document.getElementById("prueba").style.display = "none";
+}
+
+function mostrar2(){
+    document.getElementById("prueba2").style.display = "block";
+}
+
+function ocultar2(){
+    document.getElementById("prueba2").style.display = "none";
+}
+
+function mostrar3(){
+    document.getElementById("prueba3").style.display = "block";
+}
+
+function ocultar3(){
+    document.getElementById("prueba3").style.display = "none";
+}
+
+function mostrar4(){
+    document.getElementById("prueba4").style.display = "block";
+}
+
+function ocultar4(){
+    document.getElementById("prueba4").style.display = "none";
 }
